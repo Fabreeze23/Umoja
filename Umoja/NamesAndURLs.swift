@@ -11,14 +11,30 @@
 
 import Foundation
 
-let NAME_LIST = ["King Leopold's Ghost", "Mobutu Sese Seko", "Patrice Lumumba"]
+let HISTORY_LIST = ["King Leopold's Ghost"]
 
-let NAME_URL_DICT: [String: String] = [
+let PEOPLE_LIST = ["Étienne Tshisekedi", "Mobutu Sese Seko", "Patrice Lumumba"]
+
+let RESOURCE_LIST = ["Coltan"]
+
+let DATA_DICT: [String: String] = [
     
+    //============================================HISTORY===============================================
     "King Leopold's Ghost": "https://en.wikipedia.org/wiki/King_Leopold%27s_Ghost",
+    
+    //============================================PEOPLE===============================================
+    "Étienne Tshisekedi": "https://en.wikipedia.org/wiki/%C3%89tienne_Tshisekedi",
     
     "Mobutu Sese Seko": "https://en.wikipedia.org/wiki/Mobutu_Sese_Seko",
 
-    "Patrice Lumumba": "https://www.biography.com/people/patrice-lumumba-38745"
+    "Patrice Lumumba": "https://www.biography.com/people/patrice-lumumba-38745",
+    
+    
+    //============================================RESOURCES===============================================
+
+    "Coltan": "https://en.wikipedia.org/wiki/Coltan#Ethics_of_mining_in_the_Democratic_Republic_of_Congo"
     
     ]
+
+
+let CATEGORY_LIST = ["History", "People", "Resources"]

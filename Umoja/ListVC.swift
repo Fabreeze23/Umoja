@@ -10,11 +10,14 @@
 import UIKit
 
 
-class ChaptersVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
+    
+    var dataList: Array<String>!
     var webLink: String!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +37,7 @@ class ChaptersVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return NAME_LIST.count
+        return dataList.count
         
     }
     
@@ -42,7 +45,7 @@ class ChaptersVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
-        let name = NAME_LIST[indexPath.row]
+        let name = dataList[indexPath.row]
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PageNameCell") as? NameTableViewCell {
             
@@ -67,7 +70,7 @@ class ChaptersVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             
             if let cell = tableView.dequeueReusableCell(withIdentifier: "PageNameCell") as? NameTableViewCell {
                 
-                webLink = cell.configureURL(name: NAME_LIST[row])
+                webLink = cell.configureURL(name: dataList[row])
                 WebViewController.website = webLink //Goes to site with the web address at that row
 
             }

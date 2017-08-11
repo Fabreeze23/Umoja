@@ -5,7 +5,7 @@
 //  Created by Fabrice Mulumba on 8/5/17.
 //  Copyright © 2017 Fab. All rights reserved.
 //
-// Manages the cells in the table. 
+// Manages the cells in the table of names. 
 // 
 //
 
@@ -27,9 +27,11 @@ class NameTableViewCell: UITableViewCell {
         
     }
     
+    
+    // Sends the URL from the dictionary that correponds to the name in the dictionary. 
     func configureURL(name: String) -> String {
         
-        url = NAME_URL_DICT[name]
+        url = DATA_DICT[name]
         
         return url
         
