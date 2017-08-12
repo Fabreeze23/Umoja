@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F0549C71F3E84DB00797222 /* OverviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0549C61F3E84DB00797222 /* OverviewVC.swift */; };
 		5F5B2E0F1F3D08F500485429 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B2E0E1F3D08F500485429 /* CategoriesVC.swift */; };
 		5F5B2E111F3D13F100485429 /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B2E101F3D13F100485429 /* CategoriesTableViewCell.swift */; };
 		5F5B2E131F3D221C00485429 /* CategoryBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B2E121F3D221C00485429 /* CategoryBuffer.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F0549C61F3E84DB00797222 /* OverviewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewVC.swift; sourceTree = "<group>"; };
 		5F5B2E0E1F3D08F500485429 /* CategoriesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
 		5F5B2E101F3D13F100485429 /* CategoriesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewCell.swift; sourceTree = "<group>"; };
 		5F5B2E121F3D221C00485429 /* CategoryBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryBuffer.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				5FEDC72D1F368A7D00E1F67D /* ListVC.swift */,
 				5FEDC73E1F3691D700E1F67D /* ChaptersWebViewVC.swift */,
 				5F5B2E0E1F3D08F500485429 /* CategoriesVC.swift */,
+				5F0549C61F3E84DB00797222 /* OverviewVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F5B2E0F1F3D08F500485429 /* CategoriesVC.swift in Sources */,
+				5F0549C71F3E84DB00797222 /* OverviewVC.swift in Sources */,
 				5FEDC72E1F368A7D00E1F67D /* ListVC.swift in Sources */,
 				5FEDC72C1F368A7D00E1F67D /* AppDelegate.swift in Sources */,
 				5F788DE91F36A4050001C78E /* NamesAndURLs.swift in Sources */,

@@ -60,7 +60,6 @@ class CategoriesVC: UIViewController, UITableViewDelegate, UITableViewDataSource
             
             let destination = segue.destination as! ListVC
             
-            
             let myIndexPath = tableView.indexPathForSelectedRow! //Sets the indexPath to the indexPath of the row that was selected
             
             let row = myIndexPath.row //sets row equal to the row of the IndexPath

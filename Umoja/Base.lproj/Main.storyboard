@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HBK-KV-Xq6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HlR-Co-Xh8">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,7 +9,54 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--List-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="FtR-TL-YFe">
+            <objects>
+                <tabBarController id="HlR-Co-Xh8" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="0ug-mF-coB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="3cV-fD-WeU" kind="relationship" relationship="viewControllers" id="HxE-JV-ARl"/>
+                        <segue destination="HBK-KV-Xq6" kind="relationship" relationship="viewControllers" id="LLY-wx-MEU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w6m-7o-KON" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3601" y="196"/>
+        </scene>
+        <!--Overview-->
+        <scene sceneID="P0z-fi-RXY">
+            <objects>
+                <viewController title="Overview" id="NaH-On-tVN" customClass="OverviewVC" customModule="Umoja" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CBX-qu-s7b"/>
+                        <viewControllerLayoutGuide type="bottom" id="tHP-2e-wom"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jbw-hj-v5g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYY-So-9X7">
+                                <rect key="frame" x="0.0" y="20" width="375" height="571"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Umoja is the Swahili word for "unity".   As this app continues to update, I want people to come together and help the Democratic Republic of Congo reach its full potential. </string>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="31"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Overview" id="yTo-dO-wGi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="24n-9L-dP6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-16.800000000000001" y="195.6521739130435"/>
+        </scene>
+        <!--Pages-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ListVC" customModule="Umoja" customModuleProvider="target" sceneMemberID="viewController">
@@ -55,7 +102,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="List" id="whr-R3-9t3"/>
+                    <navigationItem key="navigationItem" title="Pages" id="whr-R3-9t3"/>
                     <connections>
                         <outlet property="tableView" destination="fL8-bH-9An" id="UKh-2D-xlf"/>
                         <segue destination="xQX-Kx-ixk" kind="show" id="TWg-Gt-5hY"/>
@@ -92,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fbp-YW-ofS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3476" y="695.80209895052474"/>
+            <point key="canvasLocation" x="4415.1999999999998" y="694.90254872563719"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qU3-Mf-5M2">
@@ -110,7 +157,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C9c-J2-2hP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="135.38230884557723"/>
+            <point key="canvasLocation" x="2015.2" y="135.38230884557723"/>
         </scene>
         <!--Categories-->
         <scene sceneID="0Yl-uU-E5G">
@@ -158,6 +205,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Categories" id="beG-Hm-wai"/>
                     <navigationItem key="navigationItem" title="Categories" id="Dl8-yW-pWF"/>
                     <connections>
                         <outlet property="tableView" destination="9ya-Dq-2oJ" id="60C-lR-ftx"/>
@@ -166,7 +214,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zqT-bm-F6D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-162.40000000000001" y="2553.3733133433284"/>
+            <point key="canvasLocation" x="-1505" y="1316"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yZR-u6-lhd">
@@ -186,11 +234,11 @@
             </objects>
             <point key="canvasLocation" x="2487" y="2155"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Categories-->
         <scene sceneID="XWS-jl-W2q">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ChS-81-Nfx" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HBK-KV-Xq6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Categories" id="YoJ-7x-uBz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fas-tL-DfI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -201,12 +249,32 @@
                         <segue destination="7ra-7b-eRC" kind="relationship" relationship="rootViewController" id="AUo-2t-RGW"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ChS-81-Nfx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2572" y="1110"/>
+            <point key="canvasLocation" x="-2505" y="1316"/>
+        </scene>
+        <!--Overview-->
+        <scene sceneID="uYQ-vP-nI2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3cV-fD-WeU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Overview" id="GX5-V3-AOf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mol-hL-yzL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NaH-On-tVN" kind="relationship" relationship="rootViewController" id="n0x-TR-pR9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="al0-V4-f47" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-956" y="195.6521739130435"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ltN-yL-HuW"/>
         <segue reference="ITG-T4-z6o"/>
+        <segue reference="ltN-yL-HuW"/>
     </inferredMetricsTieBreakers>
 </document>
